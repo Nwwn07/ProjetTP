@@ -1,32 +1,25 @@
 # ProjetTP
 Quoikoubeh
 
-Fonction à implémenter:
+Partie 1 : Recherche du chemin le plus court chemin 
 
-Pour la recherche:
+Le but de cette partie est de représenter 1 graphe en c, d'y implémenter 1 algorithme qui permet de trouver le plus court chemin et de l'appliquer a un jeu de police voleur afin d'une part de permette de trouver le chemin le plus court entre la police et le voleur et d'autre part, pour le voleur de trouver le chemin de plus rapide jusqu'a son fourgon. 
 
-->Création de la liste d'adjacance: Deux struct et le plus efficiant en mémoire
-  ->Lire le fichier txt
-  ->Creer la liste d'adjacance
-  ->Fermer le fichier txt
+Fonction a implémenter : 
 
--> Le plus court chemin : dijkstra
-car certe plus long mais vu qu on est sur un petit graphe cette contrainte est moin importante et surtout dans le cas d'une course poursuite avoir le plus court chemin pour rattraper le voleur est important et seul dikjstra peut garantir d avoir le plus court chemin.
-  ->Trouver le somment avec la distance minimale non visité
+- Algo du plus court chemin : on va utiliser Dijkstra car par rapport a l'algorihtme A*, il donne toujours le plus court chemin et comme on travail avec des graphes relativemment petits, nous n'avons pas besoin d'utiliser A*.
+      - Dijkstra a besoin de struct et d'une fonction qui permet d'identifier le plus court chemin. 
 
-Pour la coloration:
+  
+  
+- Algothime de visualisation du graphe (convertion fichier text --> liste d'adjacence car c'est la plus économe en mémoire et que le parcours des voisins se fait rapidemment.
+  définition d'une structure avec le noeud , les voisins du noeud, le poid de ce dernier = "coût d'une route" (poid qui représente le traffic routier, limitation de vitesse...)
 
-->Calcul du dregres:
-  ->Calcul du D-
-  ->Calcul du D+
+Partir 2 :  Surveillance urbaine 
 
-->Tableau struct  ->D
-                  ->Sommet
-                  ->Couleur
+L'objectif de cette partie est de  déterminer le nombre minimal d'intersections où des caméras devraient être
+installées afin que chaque rue dans La ville est sous surveillance, pour ce faire nous allons l'utiliser l'algorithme de coloration de welsh powel.
 
-->Creation des couleurs
--> Calcul de quelle couleur a le moin d'effectif
+Partie 3 : Logistique des véhicules de police
 
-Pour l'optimisation de la charge utile:
-->max
-->Tri par programation dynamique
+Dans cette partie, nous avons  a notre disposition une liste d'item avec leurs poids et leus valeur tactique repsectif, le but est de concevoir un système qui maximise la valeur tactique totale que l'on peut avoir tout en restant en dessous de 40kg. Pour ce faire nous allons mettre en place un algorithme 
