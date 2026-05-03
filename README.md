@@ -1,32 +1,46 @@
-# ProjetTP
-Quoikoubeh
+Projet TP
+Fonctions à implémenter
+Partie 1 : Recherche du chemin le plus court
+Le but de cette partie est de représenter un graphe en C, d'y implémenter un algorithme qui permet de trouver le chemin le plus court et de l'appliquer à un jeu de police-voleur, afin d'une part de permettre de trouver le chemin le plus court entre la police et le voleur, et d'autre part, pour le voleur de trouver le chemin le plus rapide jusqu'à son fourgon.
+Pour la recherche :
 
-Fonction à implémenter:
+Création de la liste d'adjacence : deux structs, la plus efficiente en mémoire
 
-Pour la recherche:
+Lire le fichier txt
+Créer la liste d'adjacence
+Fermer le fichier txt
 
-->Création de la liste d'adjacance: Deux struct et le plus efficiant en mémoire
-  ->Lire le fichier txt
-  ->Creer la liste d'adjacance
-  ->Fermer le fichier txt
 
--> Le plus court chemin : dijkstra
-car certe plus long mais vu qu on est sur un petit graphe cette contrainte est moin importante et surtout dans le cas d'une course poursuite avoir le plus court chemin pour rattraper le voleur est important et seul dikjstra peut garantir d avoir le plus court chemin.
-  ->Trouver le somment avec la distance minimale non visité
+Le plus court chemin : Dijkstra
+Car certes plus lent, mais vu qu'on est sur un petit graphe cette contrainte est moins importante. De plus, dans le cas d'une course-poursuite, avoir le chemin le plus court pour rattraper le voleur est primordial, et seul Dijkstra peut garantir d'avoir le chemin le plus court.
 
-Pour la coloration:
+Trouver le sommet avec la distance minimale non visité : 
 
-->Calcul du dregres:
-  ->Calcul du D-
-  ->Calcul du D+
+Partie 2 : Surveillance urbaine
+L'objectif de cette partie est de déterminer le nombre minimal d'intersections où des caméras devraient être installées afin que chaque rue de la ville soit sous surveillance. Pour ce faire, nous allons utiliser l'algorithme de coloration de Welsh-Powell.
+Pour la coloration :
 
-->Tableau struct  ->D
-                  ->Sommet
-                  ->Couleur
+Calcul des degrés :
 
-->Creation des couleurs
--> Calcul de quelle couleur a le moin d'effectif
+Calcul du D-
+Calcul du D+
 
-Pour l'optimisation de la charge utile:
-->max
-->Tri par programation dynamique
+
+Tableau struct :
+
+D
+Sommet
+Couleur
+
+
+Création des couleurs
+Calcul de quelle couleur a le moins d'effectif
+
+
+Partie 3 : Logistique des véhicules de police
+Dans cette partie, nous disposons d'une liste d'items avec leurs poids et leurs valeurs tactiques respectives. Le but est de concevoir un système qui maximise la valeur tactique totale tout en restant en dessous de 40 kg. Pour ce faire, nous allons mettre en place un algorithme d'optimisation.
+
+Pour l'optimisation de la charge utile :
+
+Maximum
+Tri par programmation dynamique
