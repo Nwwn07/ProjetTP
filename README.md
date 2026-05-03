@@ -40,7 +40,8 @@ Calcul de quelle couleur a le moins d'effectif
 Partie 3 : Logistique des véhicules de police
 Dans cette partie, nous disposons d'une liste d'items avec leurs poids et leurs valeurs tactiques respectives. Le but est de concevoir un système qui maximise la valeur tactique totale tout en restant en dessous de 40 kg. Pour ce faire, nous allons mettre en place un algorithme d'optimisation.
 
-Pour l'optimisation de la charge utile :
+Pour l'optimisation de la charge utile nous allons avoir besoin de 2 algos:
 
 Maximum
-Tri par programmation dynamique
+
+Tri par programmation dynamique 
